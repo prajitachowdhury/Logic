@@ -27,9 +27,12 @@ def truth_table(N):
 
 
 # Main program calling the function to generate the truth table
-print("Enter an integer value of N(1 to 100):")
-N = int(input())
-if N < 1 or N > 100 or int(N)==False:
-  print("Invalid value.")
+try:
+  N = int(input("Enter an integer value of N(1 to 10): "))       
+except ValueError:
+  print("Not an integer!")
 else:
-  print(truth_table(N))
+  if N < 1 or N > 10 :
+    print("Invalid value.")
+  else:
+    print(truth_table(N))
