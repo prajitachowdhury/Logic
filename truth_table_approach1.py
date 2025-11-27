@@ -1,4 +1,6 @@
-# The Objective of this code is to generate a truth table for N inputs. It is designed to first ask the user to enter the value of N, following which the code will return the truth table for it.
+# Objective: The Objective of this code is to generate a truth table for N inputs. 
+# Design: It is designed to first ask the user to enter the value of N, following which the code will return the truth table for it.
+# Approach: The approach taken in this code is by first initiating a zero matrix of  (2^N) x N, where the rows indicate the target value whose binary value is to be calculated, followed by updating the position of '1's in table depending on the value indicated by the respective row. 
 
 # Import the required libraries
 import numpy as np
