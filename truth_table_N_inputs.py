@@ -30,7 +30,7 @@ def truth_table(N):
 try:
   N = int(input("Enter an integer value of N(1 to 10): "))       
 except ValueError:
-  print("Not an integer!")
+  print("The input is not an integer.")
 else:
   if N < 1 or N > 10 :
     print("Invalid value.")
